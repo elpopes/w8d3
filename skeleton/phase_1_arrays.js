@@ -23,3 +23,15 @@ Array.prototype.twoSum = function () {
     }
     return newArray;
 }
+
+Array.prototype.transpose = function () {
+    let bigArr = [];
+    for (i = 0; i < this.length; i++) {
+        let littleArr = [];
+        for (j = 0; j < this.length; j++) {
+            littleArr.push(this[j][i]);
+        }
+        bigArr.push(littleArr);
+    }
+    return bigArr;
+}
